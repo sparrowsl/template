@@ -8,7 +8,9 @@
 </script>
 
 <Dialog.Root>
-	<Dialog.Trigger>Airdrop</Dialog.Trigger>
+	<Dialog.Trigger>
+		<Button variant="outline">Airdrop</Button>
+	</Dialog.Trigger>
 	<Dialog.Content>
 		<Dialog.Header>
 			<Dialog.Title>Airdrop</Dialog.Title>

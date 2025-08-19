@@ -9,7 +9,9 @@
 </script>
 
 <Dialog.Root>
-	<Dialog.Trigger>Send</Dialog.Trigger>
+	<Dialog.Trigger>
+		<Button variant="outline">Send</Button>
+	</Dialog.Trigger>
 	<Dialog.Content>
 		<Dialog.Header>
 			<Dialog.Title>Send</Dialog.Title>

@@ -1,10 +1,13 @@
 <script lang="ts">
 	import * as Dialog from '$lib/components/ui/dialog';
 	import { page } from '$app/state';
+	import { Button } from '$lib/components/ui/button';
 </script>
 
 <Dialog.Root>
-	<Dialog.Trigger>Receive</Dialog.Trigger>
+	<Dialog.Trigger>
+		<Button variant="outline">Receive</Button>
+	</Dialog.Trigger>
 	<Dialog.Content>
 		<Dialog.Header>
 			<Dialog.Title>Receive</Dialog.Title>

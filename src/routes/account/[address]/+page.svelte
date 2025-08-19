@@ -15,13 +15,13 @@
 				<h1 class="text-5xl font-bold">0 SOL</h1>
 				<p class="pt-4 md:py-6">{address.toString()}</p>
 			</div>
-		</div>
-	</div>
 
-	<div class="my-4 flex gap-4">
-		<RequestAirdropModal />
-		<SendModal />
-		<ReceiveModal />
+			<div class="mx-auto my-4 flex w-fit gap-2">
+				<RequestAirdropModal />
+				<SendModal />
+				<ReceiveModal />
+			</div>
+		</div>
 	</div>
 
 	<div class="space-y-8">
