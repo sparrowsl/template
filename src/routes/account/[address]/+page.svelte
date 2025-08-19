@@ -1,12 +1,9 @@
 <script lang="ts">
 	import { PublicKey } from '@solana/web3.js';
 	import { page } from '$app/state';
-	// import { useMemo } from 'react'
-	// import { useParams } from 'next/navigation'
-	// import { ExplorerLink } from '../cluster/cluster-ui'
-	// import { AccountBalance, AccountButtons, AccountTokens, AccountTransactions } from './account-ui'
-	// import { AppHero } from '../app-hero'
-	// import { ellipsify } from '@/lib/utils'
+	import SendModal from './send-modal.svelte';
+	import ReceiveModal from './receive-modal.svelte';
+	import RequestAirdropModal from './request-airdrop.svelte';
 
 	let address = $state(new PublicKey(String(page.params?.address)));
 </script>
@@ -21,9 +18,12 @@
 		</div>
 	</div>
 
-	<!-- <div class="my-4">
-          <AccountButtons address={address} />
-        </div> -->
+	<div class="my-4 flex gap-4">
+		<RequestAirdropModal />
+		<SendModal />
+		<ReceiveModal />
+	</div>
+
 	<div class="space-y-8">
 		<!-- <AccountTokens address={address} /> -->
 		<!-- <AccountTransactions address={address} /> -->
